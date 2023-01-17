@@ -28,9 +28,9 @@
 
 내용을 추가해주세요.
 
-그 후 .husky/pre-commit 파일에
+그 후 `npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'` 를 터미널에 입력해 주세요.
 
-`npx --no-install commitlint --edit $1` 내용을 추가해주세요.
+.husky 아래 commit-msg 파일이 추가되면 성공입니다.
 
 위 설정이 완료되면 commit 할때 commitlint 가 먼저 실행되어서 commit msg 를 확인합니다.
 
