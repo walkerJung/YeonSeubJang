@@ -20,7 +20,7 @@
 >
 > `yarn add -WD --exact prettier`
 
-# 1. husky
+# 1. husky + commitlint
 
 설치 후 `commitlint.config.js` 파일을 root dir 에 추가 하고
 
@@ -45,3 +45,5 @@ commit msg 는 아래와 같은 형식으로 작성해야 합니다.
 > commit msg : 커밋에 대한 간단한 설명
 >
 > ex) git commit -m "feat: code convention init"
+
+# 2. husky + prettier
