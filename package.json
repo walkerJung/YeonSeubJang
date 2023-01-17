@@ -1,0 +1,26 @@
+{
+  "name": "YeonSeubJang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/walkerJung/YeonSeubJang.git",
+  "author": "junghoon <jjh_walker@kakao.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "config/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.3"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "packages/vite-react-ts/**/*.{ts,tsx}": "eslint --cache --fix"
+  }
+}
