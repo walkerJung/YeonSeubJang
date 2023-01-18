@@ -58,8 +58,8 @@ eslint 는 config/common-eslint 를 공통 eslint 로 사용하면서 각 packag
 
 따로 추가하고자 하는 설정이 있으면 extends 에 추가하면 되기 때문에 각 packages 에 공통 eslint 와 custom eslint 를 추가하는데 편리합니다.
 
-# 3. husky + lint-staged
+# 3. husky + lint-staged + eslint + prettier
 
 .husky 아래 pre-commit 파일에서 `npx lint-staged` 를 싱핼시킵니다.
 
-monorepo root 에 있는 package.json 에 lint-staged 는 stage 되어잇는, 즉 이번 commit 에 추가될 파일들을 대상으로 eslint 를 실행시킵니다. eslint 에 걸리게 된다면 commit 은 취소됩니다.
+monorepo root 에 있는 package.json 에 lint-staged 는 stage 되어잇는, 즉 이번 commit 에 추가될 파일들을 대상으로 eslint + prettier 를 실행시킵니다. eslint 에 걸리게 된다면 commit 은 취소됩니다.
