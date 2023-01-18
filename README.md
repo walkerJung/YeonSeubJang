@@ -46,4 +46,14 @@ commit msg 는 아래와 같은 형식으로 작성해야 합니다.
 >
 > ex) git commit -m "feat: code convention init"
 
-# 2. husky + prettier
+# 2. eslint
+
+eslint 는 config/common-eslint 를 공통 eslint 로 사용하면서 각 packages 에서 공통 설정을 extends 받아서 사용하고 필요하다면 다른 설정을 extends 받아서 사용할수 있도록 구성하였습니다.
+
+각각의 packages root 경로에 .eslintrc.cjs 파일을 만든 후 아래 내용을 추가하여 사용합니다.
+
+`module.exports = {
+  extends: "eslint-config-common-eslint",
+};`
+
+따로 추가하고자 하는 설정이 있으면 extends 에 추가하면 되기 때문에 각 packages 에 공통 eslint 와 custom eslint 를 추가하는데 편리합니다.

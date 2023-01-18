@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-core-eslint",
+  "name": "eslint-config-common-eslint",
   "version": "1.0.0",
   "description": "공용으로 사용할 eslint 입니다.",
   "main": ".eslintrc.js",
@@ -16,5 +16,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.1",
     "typescript": "*"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
   }
 }
