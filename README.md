@@ -8,9 +8,9 @@
 >
 > `yarn add -WD lint-staged`
 >
-> ### eslint : 소스코드에 문제가 있는지 탐색합니다.
+> ### yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript : 소스코드에 문제가 있는지 탐색합니다.
 >
-> `yarn add -WD eslint`
+> `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript`
 >
 > ### commitlint : git commit message 의 convention 을 체크합니다.
 >
@@ -46,7 +46,7 @@ commit msg 는 아래와 같은 형식으로 작성해야 합니다.
 >
 > ex) git commit -m "feat: code convention init"
 
-# 2. eslint
+# 2. typescript-eslint
 
 eslint 는 config/common-eslint 를 공통 eslint 로 사용하면서 각 packages 에서 공통 설정을 extends 받아서 사용하고 필요하다면 다른 설정을 extends 받아서 사용할수 있도록 구성하였습니다.
 
