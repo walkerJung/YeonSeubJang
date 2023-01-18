@@ -13,14 +13,19 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
-    "prettier": "2.8.3"
+    "prettier": "^2.8.3"
   },
   "scripts": {
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix"
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --config ./.prettierrc --write -u"
+    ]
   }
 }
