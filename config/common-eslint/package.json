@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-common-eslint",
+  "version": "1.0.0",
+  "description": "common eslint",
+  "main": ".eslintrc.cjs",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "typescript": "^4.9.4"
+  }
+}
