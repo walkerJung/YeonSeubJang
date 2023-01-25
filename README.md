@@ -8,7 +8,7 @@
 >
 > `yarn add -WD lint-staged`
 >
-> ### yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript : 소스코드에 문제가 있는지 탐색합니다.
+> ### eslint typescript : 소스코드에 문제가 있는지 탐색합니다.
 >
 > `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript`
 >
